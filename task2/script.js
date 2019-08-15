@@ -1,4 +1,4 @@
-function Numbers (x) {
+function Numbers () {
     if (arguments.length === 0) {
         return 'Error!';
     } else if (arguments.length >= 10) {
