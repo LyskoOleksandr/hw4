@@ -1,5 +1,5 @@
-function Numbers () {
-    if (arguments.length === 0) {
+function Numbers (x) {
+    if (arguments.length === 0 || isNaN(x)) {
         return 'Error!';
     } else if (arguments.length >= 10) {
         let numArray = [];
@@ -18,4 +18,4 @@ function Numbers () {
     }
 }
 
-console.log(Numbers(4))
+console.log(Numbers(4,6,1,2,4,56,6))
