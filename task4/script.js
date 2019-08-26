@@ -9,14 +9,17 @@ function bubblesort(arr) {
                 let added = arr[x+1];
                 arr[x+1] = arr[x];
                 arr[x] = added;
+                x=-1;
+                console.log(arr);
             }
         }
     }
+    
     return arr;
 }
 
-let array = [2,5,4,3,1,52,23,3,18,16,28];
+let newArray = [2,5,4,3,1,52,23,3,18,16,28];
 
 
-console.log(array);
-console.log(bubblesort(array));
+console.log(newArray);
+console.log(bubblesort(newArray));
